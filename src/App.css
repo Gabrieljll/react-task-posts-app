@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+body {
+    padding: 0;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: 'Linotte-Regular';
+    src: url('resources/Linotte_Regular.otf')
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.divNav {
+    background-color: rgb(37, 34, 34);
+    height: 100px;
+    margin-bottom: 1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.navLink {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: Linotte-Regular;
+    margin: 0px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+    background-color: lightblue;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.divTaskForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.taskInput {
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    font-family: Linotte-Reglar;
+    border: 0;
+}
+
+textarea {
+    border: 0;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    font-family: Linotte-Regular;
+}
+
+.submitTaskButton {
+    background-color: #e7e7e7;
+    color: black;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 300px;
+}
+
+.divTasks {
+    margin: 20px 0px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.divTasks div {
+    display: block;
+    font-family: Linotte-Regular;
+    font-size: 30px;
+}
+
+.divTask {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Tasks {
+    background-color: lightblue;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.checkboxDone {
+    transform: scale(1.5);
+    margin: 0px 15px;
 }
